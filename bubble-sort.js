@@ -7,7 +7,7 @@ function bubbleSort(array) {
     var endIndex = arrLength;
 
     for (let i = 0; i < arrLength; i++) {
-        for (let j = 0; j < endIndex; j++) {
+        for (let j = 0; j < endIndex-1; j++) {
 
             let diff = (array[j] - array[j + 1]);
 
@@ -20,5 +20,8 @@ function bubbleSort(array) {
 
     return array;
 }
+
+var array = [5, 4, 3, 2, 1];
+var result = bubbleSort(array);
 
 module.exports = bubbleSort;
