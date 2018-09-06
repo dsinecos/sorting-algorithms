@@ -21,4 +21,11 @@ describe("Test Bubble sort", function() {
         expect(result).to.deep.equal([1, 2, 2, 3, 3, 4, 5]);
     })
 
+    it("sorts an array with negative integers", function() {
+        var array = [-1, -4, -2, 3, 7, 4, 1];
+        var result = bubbleSort(array);
+
+        expect(result).to.deep.equal([-4, -2, -1, 1, 3, 4, 7]);
+    })
+
 })
